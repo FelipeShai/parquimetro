@@ -1,6 +1,6 @@
-package br.com.fiap.parquimetro.domain.vehicle.repository;
+package br.com.fiap.parquimetro.domain.repositories;
 
-import br.com.fiap.parquimetro.domain.vehicle.entity.Vehicle;
+import br.com.fiap.parquimetro.domain.entities.Vehicle;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

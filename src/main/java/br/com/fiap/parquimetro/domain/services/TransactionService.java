@@ -1,19 +1,16 @@
-package br.com.fiap.parquimetro.domain.transactions.service;
+package br.com.fiap.parquimetro.domain.services;
 
-import br.com.fiap.parquimetro.domain.parkingSpace.repository.ParkingSpaceRepository;
-import br.com.fiap.parquimetro.domain.transactions.dto.TransactionDTO;
-import br.com.fiap.parquimetro.domain.transactions.entity.Transaction;
-import br.com.fiap.parquimetro.domain.transactions.repository.ITransactionRepository;
-import br.com.fiap.parquimetro.domain.vehicle.dto.VehicleDTO;
-import br.com.fiap.parquimetro.domain.vehicle.entity.Vehicle;
-import br.com.fiap.parquimetro.domain.vehicle.repository.IVehicleRepository;
+import br.com.fiap.parquimetro.domain.repositories.ParkingSpaceRepository;
+import br.com.fiap.parquimetro.domain.dtos.TransactionDTO;
+import br.com.fiap.parquimetro.domain.entities.Transaction;
+import br.com.fiap.parquimetro.domain.repositories.ITransactionRepository;
+import br.com.fiap.parquimetro.domain.repositories.IVehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;

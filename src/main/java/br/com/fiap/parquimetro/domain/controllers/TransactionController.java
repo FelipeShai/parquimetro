@@ -1,7 +1,7 @@
-package br.com.fiap.parquimetro.domain.transactions.controller;
+package br.com.fiap.parquimetro.domain.controllers;
 
-import br.com.fiap.parquimetro.domain.transactions.dto.TransactionDTO;
-import br.com.fiap.parquimetro.domain.transactions.service.TransactionService;
+import br.com.fiap.parquimetro.domain.dtos.TransactionDTO;
+import br.com.fiap.parquimetro.domain.services.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

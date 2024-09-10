@@ -1,6 +1,6 @@
-package br.com.fiap.parquimetro.domain.parkingSpace.repository;
+package br.com.fiap.parquimetro.domain.repositories;
 
-import br.com.fiap.parquimetro.domain.parkingSpace.entity.ParkingSpace;
+import br.com.fiap.parquimetro.domain.entities.ParkingSpace;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

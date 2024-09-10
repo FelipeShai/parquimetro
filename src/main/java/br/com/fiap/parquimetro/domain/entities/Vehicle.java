@@ -1,4 +1,4 @@
-package br.com.fiap.parquimetro.domain.vehicle.entity;
+package br.com.fiap.parquimetro.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;

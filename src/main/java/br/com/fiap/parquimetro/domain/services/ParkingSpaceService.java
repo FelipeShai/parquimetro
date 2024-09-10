@@ -1,11 +1,10 @@
-package br.com.fiap.parquimetro.domain.parkingSpace.service;
+package br.com.fiap.parquimetro.domain.services;
 
-import br.com.fiap.parquimetro.domain.parkingSpace.dto.ParkingSpaceDTO;
-import br.com.fiap.parquimetro.domain.parkingSpace.entity.ParkingSpace;
-import br.com.fiap.parquimetro.domain.parkingSpace.repository.ParkingSpaceRepository;
-import br.com.fiap.parquimetro.domain.vehicle.dto.VehicleDTO;
-import br.com.fiap.parquimetro.domain.vehicle.entity.Vehicle;
-import br.com.fiap.parquimetro.domain.vehicle.service.VehicleService;
+import br.com.fiap.parquimetro.domain.exceptions.NotFoundException;
+import br.com.fiap.parquimetro.domain.dtos.ParkingSpaceDTO;
+import br.com.fiap.parquimetro.domain.entities.ParkingSpace;
+import br.com.fiap.parquimetro.domain.repositories.ParkingSpaceRepository;
+import br.com.fiap.parquimetro.domain.entities.Vehicle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,8 +46,7 @@ public class ParkingSpaceService {
     }
 
     public ParkingSpaceDTO occupySpace(UUID id, UUID vehicleId) {
-        ParkingSpace space = parkingSpaceRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Parking space not found"));
+        ParkingSpace space = parkingSpaceRepository.findById(id).orElseThrow(() -> new NotFoundException("Parking space not found"));
         if (space.isOccupied()) {
             throw new RuntimeException("Parking space is already occupied");
         }
@@ -67,7 +65,7 @@ public class ParkingSpaceService {
 
     public ParkingSpaceDTO releaseSpace(UUID id) {
         ParkingSpace space = parkingSpaceRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Parking space not found"));
+                .orElseThrow(() -> new NotFoundException("Parking space not found"));
         if (!space.isOccupied()) {
             throw new RuntimeException("Parking space is already free");
         }

@@ -1,6 +1,4 @@
-package br.com.fiap.parquimetro.domain.parkingSpace.dto;
-
-import br.com.fiap.parquimetro.domain.vehicle.dto.VehicleDTO;
+package br.com.fiap.parquimetro.domain.dtos;
 
 import java.util.UUID;
 

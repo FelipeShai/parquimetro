@@ -1,8 +1,9 @@
-package br.com.fiap.parquimetro.domain.vehicle.service;
+package br.com.fiap.parquimetro.domain.services;
 
-import br.com.fiap.parquimetro.domain.vehicle.dto.VehicleDTO;
-import br.com.fiap.parquimetro.domain.vehicle.entity.Vehicle;
-import br.com.fiap.parquimetro.domain.vehicle.repository.IVehicleRepository;
+import br.com.fiap.parquimetro.domain.exceptions.NotFoundException;
+import br.com.fiap.parquimetro.domain.dtos.VehicleDTO;
+import br.com.fiap.parquimetro.domain.entities.Vehicle;
+import br.com.fiap.parquimetro.domain.repositories.IVehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,7 @@ public class VehicleService {
 
     public VehicleDTO getVehicleById(UUID id) {
         Vehicle vehicle = vehicleRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Not found vehicle."));
+                .orElseThrow(() -> new NotFoundException("Not found vehicle."));
         return toDTO(vehicle);
     };
 

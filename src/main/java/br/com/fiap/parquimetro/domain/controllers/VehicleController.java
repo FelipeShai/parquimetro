@@ -1,7 +1,7 @@
-package br.com.fiap.parquimetro.domain.vehicle.controller;
+package br.com.fiap.parquimetro.domain.controllers;
 
-import br.com.fiap.parquimetro.domain.vehicle.dto.VehicleDTO;
-import br.com.fiap.parquimetro.domain.vehicle.service.VehicleService;
+import br.com.fiap.parquimetro.domain.dtos.VehicleDTO;
+import br.com.fiap.parquimetro.domain.services.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

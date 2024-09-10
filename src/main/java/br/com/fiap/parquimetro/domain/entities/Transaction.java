@@ -1,7 +1,5 @@
-package br.com.fiap.parquimetro.domain.transactions.entity;
+package br.com.fiap.parquimetro.domain.entities;
 
-import br.com.fiap.parquimetro.domain.parkingSpace.entity.ParkingSpace;
-import br.com.fiap.parquimetro.domain.vehicle.entity.Vehicle;
 import jakarta.persistence.*;
 import lombok.Getter;
 

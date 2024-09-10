@@ -1,6 +1,6 @@
-package br.com.fiap.parquimetro.domain.transactions.repository;
+package br.com.fiap.parquimetro.domain.repositories;
 
-import br.com.fiap.parquimetro.domain.transactions.entity.Transaction;
+import br.com.fiap.parquimetro.domain.entities.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

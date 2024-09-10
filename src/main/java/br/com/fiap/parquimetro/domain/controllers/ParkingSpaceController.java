@@ -1,7 +1,7 @@
-package br.com.fiap.parquimetro.domain.parkingSpace.controller;
+package br.com.fiap.parquimetro.domain.controllers;
 
-import br.com.fiap.parquimetro.domain.parkingSpace.dto.ParkingSpaceDTO;
-import br.com.fiap.parquimetro.domain.parkingSpace.service.ParkingSpaceService;
+import br.com.fiap.parquimetro.domain.dtos.ParkingSpaceDTO;
+import br.com.fiap.parquimetro.domain.services.ParkingSpaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

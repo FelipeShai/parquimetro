@@ -1,4 +1,4 @@
-package br.com.fiap.parquimetro.domain.vehicle.dto;
+package br.com.fiap.parquimetro.domain.dtos;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
