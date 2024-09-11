@@ -1,10 +1,10 @@
-package br.com.fiap.parquimetro.domain.services;
+package br.com.fiap.parquimetro.services;
 
-import br.com.fiap.parquimetro.domain.repositories.ParkingSpaceRepository;
-import br.com.fiap.parquimetro.domain.dtos.TransactionDTO;
-import br.com.fiap.parquimetro.domain.entities.Transaction;
-import br.com.fiap.parquimetro.domain.repositories.ITransactionRepository;
-import br.com.fiap.parquimetro.domain.repositories.IVehicleRepository;
+import br.com.fiap.parquimetro.repositories.ParkingSpaceRepository;
+import br.com.fiap.parquimetro.dtos.TransactionDTO;
+import br.com.fiap.parquimetro.entities.Transaction;
+import br.com.fiap.parquimetro.repositories.ITransactionRepository;
+import br.com.fiap.parquimetro.repositories.IVehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -58,7 +58,7 @@ public class TransactionService {
 
     private BigDecimal calculateAmount(LocalDateTime entryTime, LocalDateTime exitTime) {
         long hours = Duration.between(entryTime, exitTime).toSeconds();
-        // R$5 por hora
+        // R$5 por segundo
         BigDecimal hourlyRate = BigDecimal.valueOf(5);
         return hourlyRate.multiply(BigDecimal.valueOf(hours));
     }

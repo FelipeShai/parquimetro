@@ -1,9 +1,9 @@
-package br.com.fiap.parquimetro.domain.services;
+package br.com.fiap.parquimetro.services;
 
-import br.com.fiap.parquimetro.domain.exceptions.NotFoundException;
-import br.com.fiap.parquimetro.domain.dtos.VehicleDTO;
-import br.com.fiap.parquimetro.domain.entities.Vehicle;
-import br.com.fiap.parquimetro.domain.repositories.IVehicleRepository;
+import br.com.fiap.parquimetro.exceptions.NotFoundException;
+import br.com.fiap.parquimetro.dtos.VehicleDTO;
+import br.com.fiap.parquimetro.entities.Vehicle;
+import br.com.fiap.parquimetro.repositories.IVehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

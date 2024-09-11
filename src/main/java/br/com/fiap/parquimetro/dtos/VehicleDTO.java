@@ -1,4 +1,4 @@
-package br.com.fiap.parquimetro.domain.dtos;
+package br.com.fiap.parquimetro.dtos;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

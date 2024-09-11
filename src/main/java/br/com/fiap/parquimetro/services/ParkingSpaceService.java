@@ -1,10 +1,10 @@
-package br.com.fiap.parquimetro.domain.services;
+package br.com.fiap.parquimetro.services;
 
-import br.com.fiap.parquimetro.domain.exceptions.NotFoundException;
-import br.com.fiap.parquimetro.domain.dtos.ParkingSpaceDTO;
-import br.com.fiap.parquimetro.domain.entities.ParkingSpace;
-import br.com.fiap.parquimetro.domain.repositories.ParkingSpaceRepository;
-import br.com.fiap.parquimetro.domain.entities.Vehicle;
+import br.com.fiap.parquimetro.exceptions.NotFoundException;
+import br.com.fiap.parquimetro.dtos.ParkingSpaceDTO;
+import br.com.fiap.parquimetro.entities.ParkingSpace;
+import br.com.fiap.parquimetro.repositories.ParkingSpaceRepository;
+import br.com.fiap.parquimetro.entities.Vehicle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

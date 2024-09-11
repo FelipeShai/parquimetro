@@ -1,6 +1,6 @@
-package br.com.fiap.parquimetro.domain.exceptions.handler;
+package br.com.fiap.parquimetro.exceptions.handler;
 
-import br.com.fiap.parquimetro.domain.exceptions.NotFoundException;
+import br.com.fiap.parquimetro.exceptions.NotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

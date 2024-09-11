@@ -1,4 +1,4 @@
-package br.com.fiap.parquimetro.domain.exceptions;
+package br.com.fiap.parquimetro.exceptions;
 
 public class NotFoundException extends RuntimeException {
 

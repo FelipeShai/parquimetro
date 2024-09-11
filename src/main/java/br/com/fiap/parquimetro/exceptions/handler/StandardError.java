@@ -1,4 +1,4 @@
-package br.com.fiap.parquimetro.domain.exceptions.handler;
+package br.com.fiap.parquimetro.exceptions.handler;
 
 import java.time.Instant;
 
